@@ -20,6 +20,7 @@ class AccessoriesTableViewController: UITableViewController {
     func updateAccessories() {
         accessories = EAAccessoryManager.shared().connectedAccessories
         print("Accessories:", accessories)
+        self.tableView.reloadData()
     }
 
     override func viewDidLoad() {
@@ -41,7 +42,6 @@ class AccessoriesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return accessories.count
     }
 
