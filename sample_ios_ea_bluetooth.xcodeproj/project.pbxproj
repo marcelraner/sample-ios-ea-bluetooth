@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1F731252232686C800DFE34E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F731251232686C800DFE34E /* AppDelegate.swift */; };
-		1F731254232686C800DFE34E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F731253232686C800DFE34E /* ViewController.swift */; };
 		1F731257232686C800DFE34E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F731255232686C800DFE34E /* Main.storyboard */; };
 		1F731259232686C800DFE34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F731258232686C800DFE34E /* Assets.xcassets */; };
 		1F73125C232686C800DFE34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F73125A232686C800DFE34E /* LaunchScreen.storyboard */; };
 		1F7312652326889600DFE34E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7312642326889600DFE34E /* ExternalAccessory.framework */; };
+		1F731268232695AB00DFE34E /* AccessoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F731267232695AB00DFE34E /* AccessoriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F73124E232686C800DFE34E /* sample_ios_ea_bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample_ios_ea_bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F731251232686C800DFE34E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F731253232686C800DFE34E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F731256232686C800DFE34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F731258232686C800DFE34E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F73125B232686C800DFE34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F73125D232686C800DFE34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F7312642326889600DFE34E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		1F7312662326889600DFE34E /* sample_ios_ea_bluetooth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sample_ios_ea_bluetooth.entitlements; sourceTree = "<group>"; };
+		1F731267232695AB00DFE34E /* AccessoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			children = (
 				1F7312662326889600DFE34E /* sample_ios_ea_bluetooth.entitlements */,
 				1F731251232686C800DFE34E /* AppDelegate.swift */,
-				1F731253232686C800DFE34E /* ViewController.swift */,
+				1F731267232695AB00DFE34E /* AccessoriesTableViewController.swift */,
 				1F731255232686C800DFE34E /* Main.storyboard */,
 				1F731258232686C800DFE34E /* Assets.xcassets */,
 				1F73125A232686C800DFE34E /* LaunchScreen.storyboard */,
@@ -154,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F731254232686C800DFE34E /* ViewController.swift in Sources */,
+				1F731268232695AB00DFE34E /* AccessoriesTableViewController.swift in Sources */,
 				1F731252232686C800DFE34E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
