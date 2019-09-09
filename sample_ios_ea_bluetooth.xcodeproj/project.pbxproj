@@ -12,6 +12,7 @@
 		1F731257232686C800DFE34E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F731255232686C800DFE34E /* Main.storyboard */; };
 		1F731259232686C800DFE34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F731258232686C800DFE34E /* Assets.xcassets */; };
 		1F73125C232686C800DFE34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F73125A232686C800DFE34E /* LaunchScreen.storyboard */; };
+		1F7312652326889600DFE34E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7312642326889600DFE34E /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		1F731258232686C800DFE34E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F73125B232686C800DFE34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F73125D232686C800DFE34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7312642326889600DFE34E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		1F7312662326889600DFE34E /* sample_ios_ea_bluetooth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sample_ios_ea_bluetooth.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7312652326889600DFE34E /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				1F731250232686C800DFE34E /* sample_ios_ea_bluetooth */,
 				1F73124F232686C800DFE34E /* Products */,
+				1F7312632326889600DFE34E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +59,7 @@
 		1F731250232686C800DFE34E /* sample_ios_ea_bluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				1F7312662326889600DFE34E /* sample_ios_ea_bluetooth.entitlements */,
 				1F731251232686C800DFE34E /* AppDelegate.swift */,
 				1F731253232686C800DFE34E /* ViewController.swift */,
 				1F731255232686C800DFE34E /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				1F73125D232686C800DFE34E /* Info.plist */,
 			);
 			path = sample_ios_ea_bluetooth;
+			sourceTree = "<group>";
+		};
+		1F7312632326889600DFE34E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F7312642326889600DFE34E /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,11 @@
 				TargetAttributes = {
 					1F73124D232686C800DFE34E = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sample_ios_ea_bluetooth/sample_ios_ea_bluetooth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47CR245248;
 				INFOPLIST_FILE = sample_ios_ea_bluetooth/Info.plist;
@@ -300,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sample_ios_ea_bluetooth/sample_ios_ea_bluetooth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47CR245248;
 				INFOPLIST_FILE = sample_ios_ea_bluetooth/Info.plist;
