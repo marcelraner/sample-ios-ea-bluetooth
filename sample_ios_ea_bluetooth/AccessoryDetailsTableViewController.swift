@@ -1,5 +1,5 @@
 //
-//  AccessoriesTableViewController.swift
+//  AccessoryDetailsTableViewController.swift
 //  sample_ios_ea_bluetooth
 //
 //  Created by Marcel Raner on 09.09.19.
@@ -7,21 +7,15 @@
 //
 
 import UIKit
-import ExternalAccessory
+import ExternalAccessory.EAAccessory
 
-class AccessoriesTableViewController: UITableViewController {
+class AccessoryDetailsTableViewController: UITableViewController {
 
-    var accessories = [EAAccessory]()
+    var accessory: EAAccessory!
 
-    @IBAction func refreshButtonPressed(_ sender: Any) {
-        updateAccessories()
-    }
-
-    func updateAccessories() {
-        accessories = EAAccessoryManager.shared().connectedAccessories
-        print("Accessories:", accessories)
-        self.tableView.reloadData()
-    }
+    @IBOutlet weak var accessoryNameLabel: UILabel!
+    @IBOutlet weak var manufacturerLabel: UILabel!
+    @IBOutlet weak var modelNumberLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,28 +26,36 @@ class AccessoriesTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
 
-        updateAccessories()
+        accessoryNameLabel.text = accessory.name
+        manufacturerLabel.text = accessory.manufacturer
+        modelNumberLabel.text = accessory.modelNumber
     }
 
     // MARK: - Table view data source
 
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
+    */
 
+    /*
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return accessories.count
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
+    */
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "accessoryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        let accessory = accessories[indexPath.row]
-        cell.textLabel?.text = accessory.name
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -71,7 +73,7 @@ class AccessoriesTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }
+        }    
     }
     */
 
@@ -90,23 +92,14 @@ class AccessoriesTableViewController: UITableViewController {
     }
     */
 
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-
-        let detailsController = segue.destination as! AccessoryDetailsTableViewController
-
-        guard segue.identifier == "showAccessoryDetails",
-        let cell = sender as? UITableViewCell,
-        let indexPath = tableView.indexPath(for: cell) else {
-            return
-        }
-
-        let index = indexPath.row
-        detailsController.accessory = accessories[index]
     }
+    */
 
 }

@@ -13,6 +13,7 @@
 		1F73125C232686C800DFE34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F73125A232686C800DFE34E /* LaunchScreen.storyboard */; };
 		1F7312652326889600DFE34E /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7312642326889600DFE34E /* ExternalAccessory.framework */; };
 		1F731268232695AB00DFE34E /* AccessoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F731267232695AB00DFE34E /* AccessoriesTableViewController.swift */; };
+		1F73126C2326B89B00DFE34E /* AccessoryDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73126B2326B89B00DFE34E /* AccessoryDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		1F7312642326889600DFE34E /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		1F7312662326889600DFE34E /* sample_ios_ea_bluetooth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sample_ios_ea_bluetooth.entitlements; sourceTree = "<group>"; };
 		1F731267232695AB00DFE34E /* AccessoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoriesTableViewController.swift; sourceTree = "<group>"; };
+		1F73126B2326B89B00DFE34E /* AccessoryDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryDetailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				1F7312662326889600DFE34E /* sample_ios_ea_bluetooth.entitlements */,
 				1F731251232686C800DFE34E /* AppDelegate.swift */,
 				1F731267232695AB00DFE34E /* AccessoriesTableViewController.swift */,
+				1F73126B2326B89B00DFE34E /* AccessoryDetailsTableViewController.swift */,
 				1F731255232686C800DFE34E /* Main.storyboard */,
 				1F731258232686C800DFE34E /* Assets.xcassets */,
 				1F73125A232686C800DFE34E /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F73126C2326B89B00DFE34E /* AccessoryDetailsTableViewController.swift in Sources */,
 				1F731268232695AB00DFE34E /* AccessoriesTableViewController.swift in Sources */,
 				1F731252232686C800DFE34E /* AppDelegate.swift in Sources */,
 			);
