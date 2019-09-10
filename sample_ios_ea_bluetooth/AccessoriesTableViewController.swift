@@ -17,10 +17,18 @@ class AccessoriesTableViewController: UITableViewController {
         updateAccessories()
     }
 
+    @IBAction func searchButtonPressed(_ sender: Any) {
+        searchForAccessories()
+    }
+
     func updateAccessories() {
         accessories = EAAccessoryManager.shared().connectedAccessories
         print("Accessories:", accessories)
         self.tableView.reloadData()
+    }
+
+    func searchForAccessories() {
+        EAAccessoryManager.shared().showBluetoothAccessoryPicker(withNameFilter: nil, completion: nil)
     }
 
     override func viewDidLoad() {

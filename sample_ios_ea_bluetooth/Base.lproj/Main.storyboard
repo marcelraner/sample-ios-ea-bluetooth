@@ -45,6 +45,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Connected Accessories" id="Qvb-CN-ZEw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="tIN-R2-gNX">
+                            <connections>
+                                <action selector="searchButtonPressed:" destination="Km1-88-ehd" id="3Z5-SM-416"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="lLX-c5-veT">
                             <connections>
                                 <action selector="refreshButtonPressed:" destination="Km1-88-ehd" id="E8d-aY-kmI"/>
